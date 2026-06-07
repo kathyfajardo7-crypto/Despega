@@ -148,26 +148,26 @@
 <form action="https://script.google.com/macros/s/AKfycbx_SG3yL2s2anQv3dNUR8Yi9PgUU3PDoj_d9ebLhr3LExM30s895BiQVxpqZATwwFianA/exec" class="space-y-lg" id="registrationForm" method="POST">
 <!-- Full Name -->
 <div class="flex flex-col gap-xs">
-<label class="font-label-md text-label-md text-on-surface" for="fullName">Nombre Completo</label>
+<label class="font-label-md text-label-md text-on-surface mb-xs" for="fullName">Nombre Completo</label>
 <div class="relative">
 <span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">person</span>
-<input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="fullName" name="fullName" placeholder="Ej. Juan Pérez" required="" type="text"/>
+<input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="fullName" name="nombre" placeholder="Ej. Juan Pérez" required="" type="text"/>
 </div>
-</div><div class="flex flex-col gap-xs"><label class="font-label-md text-label-md text-on-surface" for="age">Edad</label><div class="relative"><span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">cake</span><input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="age" name="age" placeholder="Ej. 20 años" required="" type="number"/></div></div>
+</div><div class="flex flex-col gap-xs"><label class="font-label-md text-label-md text-on-surface mb-xs" for="age">Edad</label><div class="relative"><span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">cake</span><input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="age" name="age" placeholder="Ej. 20 años" required="" type="number"/></div></div>
 <!-- University -->
 <div class="flex flex-col gap-xs">
-<label class="font-label-md text-label-md text-on-surface" for="university">Universidad</label>
+<label class="font-label-md text-label-md text-on-surface mb-xs" for="university">Universidad</label>
 <div class="relative">
 <span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">school</span>
-<input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="university" name="university" placeholder="Nombre de tu institución" required="" type="text"/>
+<input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="university" name="universidad" placeholder="Nombre de tu institución" required="" type="text"/>
 </div>
-</div><div class="flex flex-col gap-xs"><label class="font-label-md text-label-md text-on-surface" for="email">Correo electrónico</label><div class="relative"><span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">mail</span><input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="email" name="email" placeholder="correo@ejemplo.com" required="" type="email"/></div></div>
+</div><div class="flex flex-col gap-xs"><label class="font-label-md text-label-md text-on-surface mb-xs" for="email">Correo electrónico</label><div class="relative"><span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">mail</span><input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="email" name="correo" placeholder="correo@ejemplo.com" required="" type="email"/></div></div>
 <!-- Cycle/Semester -->
 <div class="flex flex-col gap-xs">
-<label class="font-label-md text-label-md text-on-surface" for="cycle">Ciclo / Semestre</label>
+<label class="font-label-md text-label-md text-on-surface mb-xs" for="cycle">Ciclo / Semestre</label>
 <div class="relative">
 <span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">calendar_month</span>
-<select class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all appearance-none" id="cycle" name="cycle" required="">
+<select class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all appearance-none" id="cycle" name="ciclo" required="">
 <option disabled="" selected="" value="">Selecciona tu ciclo</option>
 <option value="1">1er Ciclo</option>
 <option value="2">2do Ciclo</option>
@@ -186,7 +186,7 @@
 </div>
 <!-- WhatsApp -->
 <div class="flex flex-col gap-xs">
-<label class="font-label-md text-label-md text-on-surface" for="whatsapp">Número de WhatsApp</label>
+<label class="font-label-md text-label-md text-on-surface mb-xs" for="whatsapp">Número de WhatsApp</label>
 <div class="relative">
 <span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">chat</span>
 <input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="whatsapp" name="whatsapp" placeholder="Ej. +51 987 654 321" required="" type="tel"/>
@@ -194,30 +194,28 @@
 </div>
 <!-- Area of Interest -->
 <div class="flex flex-col gap-xs">
-<label class="font-label-md text-label-md text-on-surface">Área de Interés</label>
-<input id="interestArea" name="interestArea" required="" type="hidden"/>
-<div class="grid grid-cols-3 gap-base">
-<button class="interest-btn border border-outline-variant py-md px-xs rounded-lg font-label-md text-label-md transition-all flex flex-col items-center gap-xs hover:bg-surface-container" data-value="Sales" type="button">
-<span class="material-symbols-outlined">payments</span>
-                            Sales
+<label class="font-label-md text-label-md text-on-surface mb-xs">Área de Interés</label>
+<input id="interestArea" name="interes" required="" type="hidden"/>
+<div class="grid grid-cols-3 gap-base"><button class="interest-btn border border-outline-variant py-md px-xs rounded-lg font-label-md text-label-md transition-all flex flex-col items-center gap-xs hover:bg-surface-container" data-value="Ventas / Cajero" type="button">
+<span class="material-symbols-outlined">shopping_cart</span>
+                            Ventas / Cajero
                         </button>
-<button class="interest-btn border border-outline-variant py-md px-xs rounded-lg font-label-md text-label-md transition-all flex flex-col items-center gap-xs hover:bg-surface-container" data-value="Service" type="button">
-<span class="material-symbols-outlined">contact_support</span>
-                            Service
+<button class="interest-btn border border-outline-variant py-md px-xs rounded-lg font-label-md text-label-md transition-all flex flex-col items-center gap-xs hover:bg-surface-container" data-value="Atención al Cliente" type="button">
+<span class="material-symbols-outlined">support_agent</span>
+                            Atención al Cliente
                         </button>
-<button class="interest-btn border border-outline-variant py-md px-xs rounded-lg font-label-md text-label-md transition-all flex flex-col items-center gap-xs hover:bg-surface-container" data-value="Admin" type="button">
-<span class="material-symbols-outlined">settings_account_box</span>
-                            Admin
-                        </button>
-</div>
+<button class="interest-btn border border-outline-variant py-md px-xs rounded-lg font-label-md text-label-md transition-all flex flex-col items-center gap-xs hover:bg-surface-container" data-value="Operaciones / Logística" type="button">
+<span class="material-symbols-outlined">inventory</span>
+                            Operaciones / Logística
+                        </button></div>
 </div>
 <!-- Submit Button -->
-<div class="pt-md">
+<div class="flex flex-col gap-xs"><label class="font-label-md text-label-md text-on-surface mb-xs" for="district">Distrito de residencia</label><div class="relative"><span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">location_on</span><input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="district" name="distrito" placeholder="Ej. Santiago de Surco" required="" type="text"/></div></div><div class="pt-md">
 <button class="w-full py-lg bg-gradient-to-r from-primary to-primary-container text-white font-headline-md rounded-lg shadow-md active:scale-[0.98] transition-transform flex items-center justify-center gap-base" id="submitBtn" type="submit">
                         Confirmar Registro
                         <span class="material-symbols-outlined">send</span>
 </button>
-</div><div class="flex flex-col gap-xs"><label class="font-label-md text-label-md text-on-surface" for="district">Distrito de residencia</label><div class="relative"><span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">location_on</span><input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="district" name="district" placeholder="Ej. Santiago de Surco" required="" type="text"/></div></div>
+</div>
 </form>
 </section>
 <!-- Success Message (Hidden by default, used only as fallback/briefly) -->
