@@ -5,8 +5,6 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
           darkMode: "class",
@@ -124,8 +122,6 @@
             color: white;
             border-color: #004ac6;
         }
-    </style>
-<style>
         body {
           min-height: max(884px, 100dvh);
         }
@@ -153,7 +149,15 @@
 <span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">person</span>
 <input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="fullName" name="nombre" placeholder="Ej. Juan Pérez" required="" type="text"/>
 </div>
-</div><div class="flex flex-col gap-xs"><label class="font-label-md text-label-md text-on-surface mb-xs" for="age">Edad</label><div class="relative"><span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">cake</span><input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="age" name="age" placeholder="Ej. 20 años" required="" type="number"/></div></div>
+</div>
+<!-- Age -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface mb-xs" for="age">Edad</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">cake</span>
+<input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="age" name="age" placeholder="Ej. 20" required="" type="number"/>
+</div>
+</div>
 <!-- University -->
 <div class="flex flex-col gap-xs">
 <label class="font-label-md text-label-md text-on-surface mb-xs" for="university">Universidad</label>
@@ -161,7 +165,15 @@
 <span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">school</span>
 <input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="university" name="universidad" placeholder="Nombre de tu institución" required="" type="text"/>
 </div>
-</div><div class="flex flex-col gap-xs"><label class="font-label-md text-label-md text-on-surface mb-xs" for="email">Correo electrónico</label><div class="relative"><span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">mail</span><input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="email" name="correo" placeholder="correo@ejemplo.com" required="" type="email"/></div></div>
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface mb-xs" for="email">Correo electrónico</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">mail</span>
+<input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="email" name="correo" placeholder="correo@ejemplo.com" required="" type="email"/>
+</div>
+</div>
 <!-- Cycle/Semester -->
 <div class="flex flex-col gap-xs">
 <label class="font-label-md text-label-md text-on-surface mb-xs" for="cycle">Ciclo / Semestre</label>
@@ -196,29 +208,60 @@
 <div class="flex flex-col gap-xs">
 <label class="font-label-md text-label-md text-on-surface mb-xs">Área de Interés</label>
 <input id="interestArea" name="interes" required="" type="hidden"/>
-<div class="grid grid-cols-3 gap-base"><button class="interest-btn border border-outline-variant py-md px-xs rounded-lg font-label-md text-label-md transition-all flex flex-col items-center gap-xs hover:bg-surface-container" data-value="Ventas / Cajero" type="button">
+<div class="grid grid-cols-3 gap-base">
+<button class="interest-btn border border-outline-variant py-md px-xs rounded-lg font-label-md text-label-md transition-all flex flex-col items-center gap-xs hover:bg-surface-container text-center" data-value="Ventas / Cajero" type="button">
 <span class="material-symbols-outlined">shopping_cart</span>
                             Ventas / Cajero
                         </button>
-<button class="interest-btn border border-outline-variant py-md px-xs rounded-lg font-label-md text-label-md transition-all flex flex-col items-center gap-xs hover:bg-surface-container" data-value="Atención al Cliente" type="button">
+<button class="interest-btn border border-outline-variant py-md px-xs rounded-lg font-label-md text-label-md transition-all flex flex-col items-center gap-xs hover:bg-surface-container text-center" data-value="Atención al Cliente" type="button">
 <span class="material-symbols-outlined">support_agent</span>
                             Atención al Cliente
                         </button>
-<button class="interest-btn border border-outline-variant py-md px-xs rounded-lg font-label-md text-label-md transition-all flex flex-col items-center gap-xs hover:bg-surface-container" data-value="Operaciones / Logística" type="button">
+<button class="interest-btn border border-outline-variant py-md px-xs rounded-lg font-label-md text-label-md transition-all flex flex-col items-center gap-xs hover:bg-surface-container text-center" data-value="Operaciones / Logística" type="button">
 <span class="material-symbols-outlined">inventory</span>
                             Operaciones / Logística
-                        </button></div>
+                        </button>
+</div>
+</div>
+<!-- District -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface mb-xs" for="district">Distrito de residencia</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">location_on</span>
+<input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="district" name="distrito" placeholder="Ej. Santiago de Surco" required="" type="text"/>
+</div>
 </div>
 <!-- Submit Button -->
-<div class="flex flex-col gap-xs"><label class="font-label-md text-label-md text-on-surface mb-xs" for="district">Distrito de residencia</label><div class="relative"><span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline text-[20px]">location_on</span><input class="w-full pl-xl pr-md py-md bg-surface-container-low border border-outline-variant rounded-lg text-body-md transition-all" id="district" name="distrito" placeholder="Ej. Santiago de Surco" required="" type="text"/></div></div><div class="pt-md">
+<div class="pt-md">
 <button class="w-full py-lg bg-gradient-to-r from-primary to-primary-container text-white font-headline-md rounded-lg shadow-md active:scale-[0.98] transition-transform flex items-center justify-center gap-base" id="submitBtn" type="submit">
                         Confirmar Registro
                         <span class="material-symbols-outlined">send</span>
 </button>
 </div>
 </form>
+<!-- Checklist de Conexión -->
+<div class="mt-lg pt-lg border-t border-outline-variant/30 text-left">
+<h4 class="font-label-md text-primary mb-sm flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+                    Checklist de Conexión
+                </h4>
+<ul class="text-label-sm text-on-surface-variant space-y-xs opacity-80">
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+                        Script publicado como "Aplicación web".
+                    </li>
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+                        Acceso configurado para "Cualquier persona".
+                    </li>
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+                        Campos coinciden con DOCUMENT_22.
+                    </li>
+</ul>
+</div>
 </section>
-<!-- Success Message (Hidden by default, used only as fallback/briefly) -->
+<!-- Success Message -->
 <div class="hidden text-center p-lg bg-secondary-container text-on-secondary-container rounded-xl mt-lg animate-fade-in" id="successMessage">
 <span class="material-symbols-outlined text-[48px] mb-md" style="font-variation-settings: 'FILL' 1;">check_circle</span>
 <h3 class="font-headline-md mb-xs">¡Registro Exitoso!</h3>
@@ -240,7 +283,9 @@
 
         interestBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                interestBtns.forEach(b => b.classList.remove('active', 'ring-2', 'ring-primary', 'bg-primary/10'));
+                interestBtns.forEach(b => {
+                    b.classList.remove('active', 'ring-2', 'ring-primary', 'bg-primary/10');
+                });
                 btn.classList.add('active', 'ring-2', 'ring-primary', 'bg-primary/10');
                 interestInput.value = btn.getAttribute('data-value');
             });
@@ -260,32 +305,42 @@
                 return;
             }
             
+            // UI Feedback
+            const originalBtnContent = submitBtn.innerHTML;
             submitBtn.disabled = true;
-            submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin">sync</span> Procesando...';
+            submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin">sync</span> Enviando datos...';
 
             const formData = new FormData(form);
             
+            // Sync fields exactly as per DOCUMENT_22/Sheet structure
+            // nombre, age, universidad, correo, ciclo, whatsapp, interes, distrito
+            const data = Object.fromEntries(formData.entries());
+
             try {
-                // Submit to Google Apps Script
+                // Submit to Google Apps Script using more robust fetch
+                // Note: mode 'no-cors' allows submission but prevents reading response.
+                // Redirects are handled by window.location if submission is assumed successful or on script success.
                 await fetch(form.action, {
                     method: 'POST',
-                    body: formData,
+                    body: formData, // Send as FormData for easiest GAS handling
                     mode: 'no-cors'
                 });
                 
-                // Show local success state briefly if needed, but primary goal is redirect
+                // Assuming success if no network error occurred (standard for no-cors)
                 form.classList.add('hidden');
                 document.querySelector('main > div').classList.add('hidden');
                 successMessage.classList.remove('hidden');
                 
-                // Redirect to pago.html as requested
-                window.location.href = 'pago.html';
+                // Redirect to pago.html
+                setTimeout(() => {
+                    window.location.href = 'pago.html';
+                }, 1500);
                 
             } catch (error) {
                 console.error('Error submitting form:', error);
                 submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Confirmar Registro <span class="material-symbols-outlined">send</span>';
-                alert('Hubo un error al enviar el registro. Por favor intenta de nuevo.');
+                submitBtn.innerHTML = originalBtnContent;
+                alert('Hubo un error al enviar el registro. Por favor verifica los permisos de tu Script de Google (Check your Script permissions) e intenta de nuevo.');
             }
         });
     </script>
