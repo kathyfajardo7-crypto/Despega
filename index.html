@@ -1,0 +1,318 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>DESPEGA | Impulsa tu carrera profesional</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(8px);
+            background: rgba(248, 249, 255, 0.8);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.1), transparent),
+                        radial-gradient(circle at bottom left, rgba(78, 222, 163, 0.05), transparent);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 16px;
+        }
+        .bento-item {
+            border-radius: 0.75rem;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.05);
+            transition: transform 0.2s ease;
+        }
+        .bento-item:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-primary": "#b4c5ff",
+                      "on-tertiary-container": "#ffeedd",
+                      "on-primary": "#ffffff",
+                      "secondary-fixed": "#6ffbbe",
+                      "primary-fixed": "#dbe1ff",
+                      "on-secondary-container": "#00714d",
+                      "on-tertiary-fixed": "#2a1700",
+                      "inverse-surface": "#213145",
+                      "on-surface-variant": "#434655",
+                      "surface-bright": "#f8f9ff",
+                      "background": "#f8f9ff",
+                      "outline-variant": "#c3c6d7",
+                      "on-primary-container": "#eeefff",
+                      "on-primary-fixed-variant": "#003ea8",
+                      "on-secondary": "#ffffff",
+                      "tertiary": "#784b00",
+                      "on-secondary-fixed": "#002113",
+                      "primary-container": "#2563eb",
+                      "on-secondary-fixed-variant": "#005236",
+                      "surface-container": "#e5eeff",
+                      "error-container": "#ffdad6",
+                      "surface-container-high": "#dce9ff",
+                      "on-background": "#0b1c30",
+                      "on-surface": "#0b1c30",
+                      "error": "#ba1a1a",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-container": "#6cf8bb",
+                      "on-tertiary-fixed-variant": "#653e00",
+                      "surface-container-low": "#eff4ff",
+                      "tertiary-fixed-dim": "#ffb95f",
+                      "surface-tint": "#0053db",
+                      "surface-container-highest": "#d3e4fe",
+                      "on-error-container": "#93000a",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "surface-variant": "#d3e4fe",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "inverse-on-surface": "#eaf1ff",
+                      "tertiary-fixed": "#ffddb8",
+                      "secondary-fixed-dim": "#4edea3",
+                      "secondary": "#006c49",
+                      "surface-dim": "#cbdbf5",
+                      "primary": "#004ac6",
+                      "on-primary-fixed": "#00174b",
+                      "tertiary-container": "#996100",
+                      "surface": "#f8f9ff",
+                      "outline": "#737686"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "md": "16px",
+                      "xs": "4px",
+                      "xl": "32px",
+                      "sm": "12px",
+                      "lg": "24px",
+                      "gutter": "16px",
+                      "container-margin": "20px"
+              },
+              "fontFamily": {
+                      "label-md": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "headline-lg-mobile": ["Montserrat"],
+                      "body-md": ["Inter"],
+                      "display-lg": ["Montserrat"],
+                      "headline-lg": ["Montserrat"],
+                      "headline-md": ["Montserrat"],
+                      "display-lg-mobile": ["Montserrat"]
+              },
+              "fontSize": {
+                      "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md shadow-sm">
+<nav class="flex justify-between items-center px-container-margin py-base max-w-[1200px] mx-auto w-full">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary" style="font-size: 32px;">rocket_launch</span>
+<span class="font-display-lg-mobile text-display-lg-mobile text-primary tracking-tight">DESPEGA</span>
+</div>
+<div class="hidden md:flex gap-lg items-center">
+<a class="font-label-md text-label-md text-primary font-bold hover:opacity-80 transition-opacity" href="#">Inicio</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 transition-opacity" href="#">Programas</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 transition-opacity" href="#">Mentores</a>
+<button class="bg-primary text-on-primary px-lg py-xs rounded-lg font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all">Login</button>
+</div>
+<button class="md:hidden material-symbols-outlined text-on-surface">menu</button>
+</nav>
+</header>
+<main class="pt-[72px]">
+<!-- Hero Section -->
+<section class="relative hero-gradient min-h-[85vh] flex items-center px-container-margin">
+<div class="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-xl items-center w-full">
+<div class="flex flex-col gap-lg z-10">
+<div class="inline-flex items-center gap-xs bg-primary-container/10 text-primary border border-primary-container/20 px-sm py-xs rounded-full w-fit">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm">CONECTANDO TALENTO UNIVERSITARIO</span>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background leading-tight">
+                        Impulsa tu carrera <span class="text-primary">profesional</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[500px]">
+                        Aceleramos tu transición de la universidad al mundo laboral con preparación estratégica, mentorías de expertos y acceso directo a las mejores empresas.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-md">
+<a href="registro.html" class="bg-gradient-to-r from-primary to-primary-container text-on-primary font-label-md text-label-md px-xl py-md rounded-lg shadow-lg hover:shadow-primary-container/25 hover:-translate-y-1 transition-all active:scale-95 text-center">Registrarme ahora</a>
+<a href="registro.html" class="bg-gradient-to-r from-primary to-primary-container text-on-primary font-label-md text-label-md px-xl py-md rounded-lg shadow-lg hover:shadow-primary-container/25 hover:-translate-y-1 transition-all active:scale-95 text-center">Registrarme ahora</a>
+</div>
+<div class="flex items-center gap-md pt-base">
+<div class="flex -space-x-3">
+<img class="w-10 h-10 rounded-full border-2 border-white" data-alt="Close up portrait of a young professional woman smiling, studio lighting, corporate modern aesthetic with soft shadows, wearing business casual attire, light and clean background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRpL9d2uZxc7ZGEdkiFKd5noD_oTqNfuUeM80aR8WZMs3Qm5yfGlhTbT_4GzwuncLF0FTmeUqI02rX-J6cxYarGwDMNkdOmErqg-F6bGLKYpzJtmcRvUiSmO_Xe_y7AK15XSBpTfavwJIazuMu1eg0Y-iqEtH6sHrHZvuL7EIWfeoy371-Mey0ujSooMh0Jd6U0TXIXKQFG-PO6hMoX-ge-oZpfSX00hIlekAlN0f2eYGFa5XBLpDlGp5sdDgkKFLjIPzvfhlMF9s">
+<img class="w-10 h-10 rounded-full border-2 border-white" data-alt="Professional headshot of a confident young man in a modern office setting, natural window lighting, high-quality digital photography style with a professional and friendly atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAah8xXTXzpcDP1Q0O8PiKUO6xFbZXu6Bwqdp0WIWVWb9tSrbazJAPq7O8Kr8mxxMCYY1aRfHR-5Zuy31kyDh4dP7lr3vZcHXPkLY-XQQaLlwtvp0iRpg2ndO8NfczQBgQKc-yg_UKghMNZqrqJtCgxHa34etFTd8l4f_w9NYBPqjzDGXOl7XE62QrTC6KjpAoK5rBTCPbDn8zblO-75rOiPTEMKhfvSqBx5N16GomXEbmz0xWPRO22dxsF7t3qvs6x1zeeXm_bFE">
+<img class="w-10 h-10 rounded-full border-2 border-white" data-alt="Portrait of a diverse university student looking forward, bright and energetic lighting, minimalist background, representing ambition and modern career focus in a professional visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMzmNv-KUj2iCTB0_gr9vVgQoIu_Ci8br9QysjIS2kwJNiyPpXB-nlSQmaKGxpm8Mx5bzjirxY8MZZhX6DM_VQJmHDeTEpqnmRUbNZNZbDhAVIMYEOmg6taz2w_rnjC2QoEwqnJwkcbWCp04kVrQbXnUAxM-1uC83OCD-UnGAUl_Ra4WKIuMexv5mSe9eNi7rjUEydZmNvcXMp9c0vYRwm4M1IeNDrN37GLW3C3yx7FtI8-NYCcYpxQzGmn5et7R7CjtpcGjO3NPc">
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-bold text-primary">+2,000</span> estudiantes ya despegaron
+                        </p>
+</div>
+</div>
+<div class="relative hidden md:block">
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary-fixed/20 rounded-full blur-3xl animate-pulse"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl"></div>
+<div class="relative z-10 bg-white p-base rounded-2xl shadow-2xl border border-outline-variant/30">
+<img class="rounded-xl w-full" data-alt="A group of ambitious university students collaborating around a laptop in a bright, modern glass-walled office space. The lighting is high-key and professional, with a blue and white color palette creating a clean, tech-forward aesthetic that emphasizes teamwork and career momentum." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDspffeX0bN1_ApAqZ9zsKz3jpuSVPgN-4CnFhpwVIk4pho9rSRnPgQ8DQXOtYo7qaFU5VHRQHvo8ydz9s5ku03hbGlKozXoun2WYDYactupXYkLSFQVR8Ik5qxD_UPMBiM1C6zLhfpQ-jISIZhZmm_n3kr2J5AZLRu5OlwxDJBTJfxeu6gbfSFppQEEFquaEvu1m1X_qunNbhO2iPsCS_ofNW7AUrLZAh5qty3F8P2Y3XoIIm159Vq8HLxNL1AtlV61Wf4LeaVMDI">
+<div class="absolute -bottom-6 -right-6 bg-secondary-container text-on-secondary-container p-md rounded-xl shadow-lg flex flex-col gap-xs max-w-[200px]">
+<span class="font-bold text-headline-md leading-none">95%</span>
+<span class="text-label-sm">Tasa de empleabilidad post-programa</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-[1200px] mx-auto px-container-margin grid grid-cols-2 md:grid-cols-4 gap-lg">
+<div class="text-center">
+<div class="font-display-lg-mobile text-primary">50+</div>
+<div class="font-label-md text-on-surface-variant">Empresas Partner</div>
+</div>
+<div class="text-center">
+<div class="font-display-lg-mobile text-primary">12k</div>
+<div class="font-label-md text-on-surface-variant">Horas de Mentoría</div>
+</div>
+<div class="text-center">
+<div class="font-display-lg-mobile text-primary">850</div>
+<div class="font-label-md text-on-surface-variant">Ofertas Activas</div>
+</div>
+<div class="text-center">
+<div class="font-display-lg-mobile text-primary">4.9</div>
+<div class="font-label-md text-on-surface-variant">Valoración Alumnos</div>
+</div>
+</div>
+</section>
+<!-- Bento Features Section -->
+<section class="py-xl px-container-margin max-w-[1200px] mx-auto">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg mb-base">Tu camino al éxito</h2>
+<p class="font-body-md text-on-surface-variant max-w-[600px] mx-auto">Diseñamos un ecosistema completo para que nada te detenga en tu primera experiencia profesional.</p>
+</div>
+<div class="bento-grid">
+<!-- Large Feature -->
+<div class="bento-item col-span-12 md:col-span-8 p-lg flex flex-col justify-between min-h-[300px] border-t-4 border-primary transition-all duration-700 opacity-100 translate-y-0">
+<div>
+<span class="material-symbols-outlined text-primary mb-md" style="font-size: 40px;">psychology</span>
+<h3 class="font-headline-md text-headline-md mb-xs">Preparación Estratégica</h3>
+<p class="font-body-md text-on-surface-variant max-w-[500px]">Simulacros de entrevistas con IA y consultores reales, optimización de CV y construcción de una marca personal imparable.</p>
+</div>
+<div class="flex gap-sm mt-lg">
+<span class="bg-surface-container px-sm py-xs rounded-full font-label-sm text-label-sm text-primary">Mock Interviews</span>
+<span class="bg-surface-container px-sm py-xs rounded-full font-label-sm text-label-sm text-primary">CV Audit</span>
+</div>
+</div>
+<!-- Small Feature -->
+<div class="bento-item col-span-12 md:col-span-4 p-lg bg-primary text-on-primary transition-all duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-on-primary mb-md" style="font-size: 40px;">hub</span>
+<h3 class="font-headline-md text-headline-md mb-xs">Networking Real</h3>
+<p class="font-body-md text-on-primary/80">Eventos exclusivos de reclutamiento con CEOs y directores de RRHH de las startups más disruptivas.</p>
+</div>
+<!-- Small Feature -->
+<div class="bento-item col-span-12 md:col-span-4 p-lg border-t-4 border-secondary transition-all duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-secondary mb-md" style="font-size: 40px;">trending_up</span>
+<h3 class="font-headline-md text-headline-md mb-xs">Crecimiento Continuo</h3>
+<p class="font-body-md text-on-surface-variant">Acceso a workshops de Soft Skills y herramientas técnicas demandadas por el mercado actual.</p>
+</div>
+<!-- Wide Feature -->
+<div class="bento-item col-span-12 md:col-span-8 p-lg flex flex-col md:flex-row gap-lg items-center bg-surface-container-highest transition-all duration-700 opacity-100 translate-y-0">
+<div class="flex-1">
+<span class="material-symbols-outlined text-primary mb-md" style="font-size: 40px;">handshake</span>
+<h3 class="font-headline-md text-headline-md mb-xs">Conexión Laboral Directa</h3>
+<p class="font-body-md text-on-surface-variant">Olvídate de portales genéricos. Te presentamos directamente a las empresas que buscan tu perfil.</p>
+</div>
+<div class="w-full md:w-1/3 h-32 md:h-full rounded-lg bg-white/50 backdrop-blur-sm overflow-hidden relative">
+<!-- Acceleration Visual Placeholder -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-full h-2 bg-outline-variant mx-lg rounded-full overflow-hidden">
+<div class="w-3/4 h-full bg-gradient-to-r from-secondary to-primary animate-[shimmer_2s_infinite]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl px-container-margin">
+<div class="max-w-[1200px] mx-auto bg-primary rounded-2xl p-xl text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+<div class="relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-md">¿Listo para el despegue?</h2>
+<p class="font-body-lg text-on-primary/90 max-w-[600px] mx-auto mb-xl">
+                        Únete a la comunidad de talentos que ya están transformando sus carreras profesionales. El proceso de registro toma menos de 2 minutos.
+                    </p>
+<a href="registro.html" class="bg-white text-primary font-label-md text-label-md px-xl py-md rounded-lg shadow-xl hover:bg-surface-bright transition-all active:scale-95 inline-flex items-center gap-xs justify-center">Registrarme ahora <span class="material-symbols-outlined">arrow_forward</span></a>
+<p class="text-on-primary/70 font-label-sm text-label-sm mt-md">Registro gratuito para estudiantes de universidades partners.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full rounded-t-xl bg-surface-container-low dark:bg-surface-container-lowest border-t border-outline-variant/30 flex flex-col items-center gap-md py-xl px-container-margin text-center">
+<div class="flex items-center gap-xs mb-md">
+<span class="material-symbols-outlined text-primary" style="font-size: 28px;">rocket_launch</span>
+<span class="font-headline-md text-headline-md text-primary">DESPEGA</span>
+</div>
+<div class="flex flex-wrap justify-center gap-lg mb-lg">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Support</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant/70">
+            © 2024 DESPEGA Career Accelerator. All rights reserved.
+        </p>
+</footer>
+<!-- Scripts for simple animations -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.bento-item').forEach(item => {
+                item.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+                observer.observe(item);
+            });
+        });
+    </script>
+
+
+</body></html>
